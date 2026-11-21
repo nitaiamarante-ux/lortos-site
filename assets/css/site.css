@@ -497,3 +497,11 @@ tr:last-child td{border-bottom:0}
 
 
 @media (min-width:900px){#onde-para .faixa-t,#quem-conduz .faixa-t,#como-comeca .faixa-t{position:sticky;top:120px}}
+
+
+.clientes{list-style:none;margin:0;padding:var(--lortos-espaco-32,32px) 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 24px;border-top:1px solid var(--lortos-linha);border-bottom:1px solid var(--lortos-linha)}
+.clientes li{margin:0;display:flex;align-items:center;min-height:80px}
+.clientes img{display:block;height:var(--h);width:auto;max-width:100%}
+@media (min-width:640px){.clientes{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:1024px){.clientes{display:flex;justify-content:space-between;align-items:center;gap:24px}}
+#clientes .faixa-t{grid-column:1/-1;margin-bottom:32px}#clientes .faixa-t h2{max-width:none}
