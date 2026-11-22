@@ -74,14 +74,18 @@
   }
 
   
+  win.lortosEvento = function (nome, p) { if (equipe || !win.gtag) return; win.gtag('event', nome, p || {}); };
+
+  
   doc.addEventListener('click', function (ev) {
     if (equipe) return;
     var a = ev.target && ev.target.closest && ev.target.closest('a'); if (!a) return;
+    if (a.hasAttribute && a.hasAttribute('data-sem-lead')) return;   
     var href = a.getAttribute('href') || '', marca = a.getAttribute('data-origem');
-    var o = origemUrl(win.location && win.location.search) || limpa(marca) || 'site';
+    var o = limpa(a.getAttribute('data-origem-evento')) || origemUrl(win.location && win.location.search) || limpa(marca) || 'site';
     if (/^https:\/\/wa\.me\//.test(href)) {
       if (win.gtag) win.gtag('event', 'generate_lead', { origem: o });
-      if (win.fbq) win.fbq('track', 'Contact');
+      if (win.fbq) win.fbq('track', a.getAttribute('data-meta') === 'Lead' ? 'Lead' : 'Contact');
     } else if (marca && win.gtag) {
       win.gtag('event', 'select_content', { content_type: 'botao', item_id: limpa(marca), origem: limpa(marca) });
     }
