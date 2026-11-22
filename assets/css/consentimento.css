@@ -1,0 +1,35 @@
+
+.ck{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--lortos-osso);color:var(--lortos-preto);border-top:1px solid var(--lortos-preto);max-height:calc(100svh - 24px);overflow-y:auto;font-family:var(--lortos-fonte-texto)}
+.ck[hidden],.ck [hidden]{display:none}
+.ck-in{max-width:1180px;margin-inline:auto;padding:16px var(--m,6vw)}
+.ck-1{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 32px;align-items:center}
+.ck-tx{grid-column:1;margin:0;font-size:16px;line-height:1.4}
+.ck-bs{display:flex;gap:10px}
+.ck-1 .ck-bs{grid-column:2;grid-row:1 / span 2}
+.ck-lk{grid-column:1;margin:0;font-size:15px}
+.ck-b{flex:1 1 0;min-width:0;min-height:48px;padding:10px 22px;border:1.5px solid var(--lortos-preto);border-radius:999px;background:transparent;color:var(--lortos-preto);font-family:var(--lortos-fonte-titulo);font-weight:700;font-size:15px;line-height:1.2;cursor:pointer;transition:background .15s,color .15s}
+.ck-b:hover{background:var(--lortos-preto);color:var(--lortos-osso)}
+.ck-2 .ck-bs{margin-top:16px}
+.ck-l{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:12px;border-bottom:1px solid var(--lortos-linha)}
+.ck-n{margin:0;font-family:var(--lortos-fonte-titulo);font-weight:700;font-size:17px;line-height:1.2}
+.ck-d{margin:4px 0 0;font-size:15px;line-height:1.4;color:var(--lortos-grafite)}
+.ck-so{font-size:15px;color:var(--lortos-grafite);white-space:nowrap}
+.ck-sw{flex:none;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 6px 0 14px;border:1.5px solid var(--lortos-preto);border-radius:999px;background:transparent;color:var(--lortos-preto);cursor:pointer;font-family:var(--lortos-fonte-texto)}
+.ck-sw .ck-so{color:inherit}
+.ck-sw::after{content:"";width:28px;height:28px;border-radius:50%;background:var(--lortos-preto);transition:transform .15s;transform:translateX(0)}
+.ck-sw[aria-checked="true"]{background:var(--lortos-preto);color:var(--lortos-osso)}
+.ck-sw[aria-checked="true"]::after{background:var(--lortos-osso)}
+.ck-2 .ck-lk{margin-top:12px}
+.ck :focus-visible{outline:2px solid var(--lortos-preto);outline-offset:2px}
+@media (max-width:760px){
+  .ck-in{padding:14px 16px 16px}
+  .ck-1{grid-template-columns:1fr;gap:10px}
+  .ck-1 .ck-bs{grid-column:1;grid-row:auto}
+  .ck-tx{font-size:14px;line-height:1.35}
+  .ck-b{min-height:44px;padding:8px 6px;font-size:14px}
+  .ck-lk{font-size:14px}
+  .ck-2 .ck-b{font-size:13px}
+  .ck-2 .ck-bs{flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){.ck-b,.ck-sw::after{transition:none}}
+@media print{.ck{display:none}}
