@@ -505,3 +505,30 @@ tr:last-child td{border-bottom:0}
 @media (min-width:640px){.clientes{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (min-width:1024px){.clientes{display:flex;justify-content:space-between;align-items:center;gap:24px}}
 #clientes .faixa-t{grid-column:1/-1;margin-bottom:32px}#clientes .faixa-t h2{max-width:none}
+
+
+body.links{min-height:100svh;display:flex;flex-direction:column}
+body.links main{flex:1;display:flex;flex-direction:column}
+.links-topo{height:176px;background:var(--lortos-preto);position:relative;overflow:hidden}
+.links-col{width:100%;max-width:480px;margin-inline:auto;padding-inline:24px}
+.links-avatar{width:112px;height:112px;margin-top:-56px;position:relative;border-radius:50%;box-shadow:0 0 0 6px var(--lortos-osso)}
+.links-col h1{margin-top:20px;font-size:40px}
+.links-desc{margin:4px 0 0;font-family:var(--lortos-fonte-titulo);font-weight:700;font-size:var(--lortos-subtitulo);line-height:1.2;color:var(--lortos-grafite)}
+.links-bio{margin:20px 0 0}
+.links-principal{margin-top:28px}
+.links-quem{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.links-foto{width:72px;height:72px;flex:none;border-radius:50%;object-fit:cover;object-position:50% 18%;box-shadow:0 0 0 1px var(--lortos-linha)}
+.links-quem .leg{margin:0}
+.btn-g{width:100%;min-height:72px;font-size:19px;padding-inline:20px;text-align:center}
+.links-dores{margin-top:48px}
+.links-dores h2{font-size:26px;line-height:1.15}
+.links-botoes{display:grid;gap:12px;margin-top:20px}
+.links-botoes .btn{width:100%;min-height:56px;font-size:17px;padding-inline:20px;text-align:left;justify-content:flex-start}
+.btn-o{background:transparent;color:var(--lortos-preto);border:1.5px solid var(--lortos-preto)}
+.btn-o:hover{background:var(--lortos-preto);color:var(--lortos-osso)}
+.links-par{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.links-par .btn{width:100%;min-height:48px;font-size:15px;padding-inline:12px;text-align:center;justify-content:center}
+.links-email{margin:0 0 12px;font-size:var(--lortos-legenda)}
+.links-rodape{margin-top:auto;padding-block:48px 32px}
+.links-rodape .leg{margin:0}
+@media (min-width:900px){.links-topo{height:240px}.links-avatar{width:128px;height:128px;margin-top:-64px}}
