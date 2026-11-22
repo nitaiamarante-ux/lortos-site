@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR" class="luz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quanto custa digitar nota à mão? | Lortos</title>
+<meta name="description" content="Coloque quantas notas chegam por mês e quanto tempo cada uma leva: veja as horas e o custo de digitar nota à mão, por mês e por ano.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://lortos.com.br/calculadora/">
+<meta name="theme-color" content="#EEEEEA">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Lortos">
+<meta property="og:title" content="Quanto custa digitar nota à mão? | Lortos">
+<meta property="og:description" content="Coloque quantas notas chegam por mês e quanto tempo cada uma leva: veja as horas e o custo de digitar nota à mão, por mês e por ano.">
+<meta property="og:url" content="https://lortos.com.br/calculadora/">
+<meta property="og:image" content="https://lortos.com.br/assets/img/lortos_virada_1_91x1.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/assets/img/lortos_icone_app_512.svg">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/img/lortos_icone_app_512.png">
+<link rel="apple-touch-icon" href="/assets/img/lortos_icone_app_512.png">
+<link rel="preload" href="/assets/fontes/Outfit-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fontes/SchibstedGrotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css?v=b2981babf5">
+<link rel="stylesheet" href="/assets/css/consentimento.css?v=838bca2f1a">
+<link rel="stylesheet" href="/assets/css/diagnostico.css?v=0255d635b9">
+<link rel="stylesheet" href="/assets/css/calculadora.css?v=369df40377">
+<link rel="stylesheet" href="/assets/css/luz.css?v=51a0a22df3">
+<script>document.documentElement.classList.add("js")</script>
+<script>if(/[?&]pronto=1/.test(location.search))document.documentElement.classList.add("parado")</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://lortos.com.br/#lortos","name":"Lortos","description":"A Lortos é uma consultoria empresarial de crescimento estratégico, com sede em Belo Horizonte.","foundingDate":"2026","url":"https://lortos.com.br/","logo":"https://lortos.com.br/assets/img/lortos_icone_app_512.png","image":"https://lortos.com.br/assets/img/lortos_virada_1_91x1.png","telephone":"+55 31 98297-6006","legalName":"NP Consultoria e Serviços Ltda","taxID":"68.698.300/0001-20","address":{"@type":"PostalAddress","streetAddress":"Rua Rio Grande do Norte, 1435, sala 708","addressLocality":"Belo Horizonte","addressRegion":"MG","postalCode":"30130-138","addressCountry":"BR"},"areaServed":"BR"},{"@type":"WebSite","@id":"https://lortos.com.br/#site","name":"Lortos","url":"https://lortos.com.br/","inLanguage":"pt-BR","publisher":{"@id":"https://lortos.com.br/#lortos"}}]}</script>
+</head>
+<body class="diag" data-pagina="15-calculadora" data-medicao="0" data-api="">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<main id="conteudo">
+
+<div class="dg-col">
+<a class="dg-logo" href="/" aria-label="Lortos, início"><img src="/assets/img/lortos_principal.svg" width="103" height="32" alt="Lortos"></a>
+<h1 id="t-calc">Quanto custa digitar nota à&nbsp;mão?</h1>
+<p class="dg-sub">Coloque os números da sua empresa. A conta é feita no seu celular e nada fica guardado.</p>
+<form class="cc-form" id="cc-form" novalidate>
+<div class="cc-c"><label for="cc-notas">Quantas notas de entrada chegam por mês?</label><input id="cc-notas" name="notas" type="text" inputmode="decimal" autocomplete="off"></div>
+<div class="cc-c"><label for="cc-min">Quantos minutos, em média, para receber, conferir e digitar uma nota?</label><input id="cc-min" name="minutos" type="text" inputmode="decimal" autocomplete="off"></div>
+<div class="cc-c"><label for="cc-hora">Quanto custa uma hora de quem faz isso? (salário com encargos dividido pelas horas do mês, em R$)</label><input id="cc-hora" name="hora" type="text" inputmode="decimal" autocomplete="off"><a class="cc-como" id="cc-como-b" href="#cc-como" aria-expanded="false" aria-controls="cc-como">Como calcular</a></div>
+<p class="cc-expl" id="cc-como" hidden>Some o salário e os encargos do mês e divida pelas horas trabalhadas no mês. Se não souber os encargos, use só o salário: o resultado sai menor do que o real.</p>
+<p class="cc-erro" id="cc-erro" role="alert" hidden></p>
+<button type="submit" class="btn btn-g cc-calc">Calcular</button>
+</form>
+<section class="cc-res" id="cc-res" aria-live="polite" tabindex="-1" hidden>
+<p class="cc-linha">Por mês: <span class="cc-n" id="cc-hm"></span> horas e <span class="cc-n" id="cc-rm"></span>.</p>
+<p class="cc-linha">Por ano: <span class="cc-n" id="cc-ha"></span> horas e <span class="cc-n" id="cc-ra"></span>.</p>
+<p class="cc-aviso">Isso é só o tempo de digitar. Não entra o custo do erro: nota lançada errada, estoque que não bate, imposto pago a mais.</p>
+<p class="cc-fato">Na loja em que a Lortos automatizou essa rotina, a primeira nota chegou à fila de conferência 6 minutos depois de ser encontrada na Secretaria da Fazenda, sem ninguém digitar.</p>
+<div class="cc-acoes">
+<a class="btn btn-g" data-cc-wa href="https://wa.me/5531982976006?text=Oi%2C%20fiz%20a%20conta%20na%20calculadora%20da%20Lortos." data-acao="whatsapp" data-meta="Lead">Falar com a Lortos no WhatsApp</a>
+<a class="btn btn-o" href="/automacao-de-processos/?o=calculadora-automacao" data-origem="calculadora-automacao">Ver como funciona a automação</a>
+<a class="btn btn-o" id="cc-zap" data-sem-lead href="https://wa.me/?text=" target="_blank" rel="noopener">Mandar o resultado para o meu WhatsApp</a>
+</div>
+</section>
+</div>
+<footer class="links-rodape"><div class="dg-col"><p class="leg dg-priv">Nada do que você digita fica guardado. A conta é feita no seu celular.</p><p class="leg">Lortos é a marca da NP Consultoria e Serviços Ltda, CNPJ 68.698.300/0001-20.<br><a href="/privacidade/#cookies" data-cookies>Cookies</a></p></div></footer>
+</main>
+
+<!--ck--><div class="ck" id="aviso-cookies" role="dialog" aria-modal="false" aria-labelledby="ck-titulo" hidden>
+<div class="ck-in">
+<div class="ck-1" data-ck-camada="1">
+<p class="ck-tx" id="ck-titulo">A Lortos usa cookies do Google e da Meta para contar as visitas e saber se os anúncios funcionam. A gente só liga se você deixar.</p>
+<div class="ck-bs"><button type="button" class="ck-b" data-ck="aceitar">Aceitar</button><button type="button" class="ck-b" data-ck="recusar">Recusar</button><button type="button" class="ck-b" data-ck="escolher">Escolher</button></div>
+<p class="ck-lk"><a href="/privacidade/#cookies">Como usamos os seus dados</a></p>
+</div>
+<div class="ck-2" data-ck-camada="2" hidden>
+<div class="ck-l"><div><p class="ck-n">Necessários</p><p class="ck-d">Guardam a sua escolha.</p></div><span class="ck-so">Sempre ligados</span></div>
+<div class="ck-l"><div><p class="ck-n" id="ck-na">Contagem de visitas (Google Analytics)</p><p class="ck-d">Conta as visitas e os cliques, para a Lortos saber o que funciona.</p></div><button type="button" class="ck-sw" role="switch" aria-checked="false" aria-labelledby="ck-na" data-ck-chave="a"><span class="ck-so">Desligado</span></button></div>
+<div class="ck-l"><div><p class="ck-n" id="ck-nd">Anúncios (Google e Meta)</p><p class="ck-d">Mede se você chegou por um anúncio da Lortos e permite mostrar a Lortos a quem já visitou o site.</p></div>
+<button type="button" class="ck-sw" role="switch" aria-checked="false" aria-labelledby="ck-nd" data-ck-chave="d"><span class="ck-so">Desligado</span></button></div>
+<div class="ck-bs"><button type="button" class="ck-b" data-ck="salvar">Salvar escolha</button><button type="button" class="ck-b" data-ck="aceitar">Aceitar todos</button><button type="button" class="ck-b" data-ck="recusar">Recusar não necessários</button></div>
+<p class="ck-lk"><a href="/privacidade/#cookies">Como usamos os seus dados</a></p>
+</div>
+</div>
+</div><!--/ck-->
+<script src="/assets/js/site.js?v=b70b713691" defer></script>
+<script src="/assets/js/calculadora.js?v=01355c88e9" defer></script>
+<script src="/assets/js/consentimento.js?v=69c9fcbb55" data-google="GTM-MJ72VJ2W" data-pixel="1266943654987197" defer></script>
+
+<script src="/assets/js/luz.js?v=69e93a95b8" defer></script>
+</body>
+</html>
