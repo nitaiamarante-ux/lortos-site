@@ -29,8 +29,8 @@
   }
 
   var win = window, doc = win.document, ls = win.localStorage;
-  var cfg = doc.currentScript || doc.querySelector('script[data-pixel],script[data-ga4]');
-  var ga4 = (cfg && cfg.getAttribute('data-ga4')) || '', pixel = (cfg && cfg.getAttribute('data-pixel')) || '';
+  var cfg = doc.currentScript || doc.querySelector('script[data-pixel],script[data-google]');
+  var ga4 = (cfg && cfg.getAttribute('data-google')) || '', pixel = (cfg && cfg.getAttribute('data-pixel')) || '';
   var equipe = false; try { equipe = ls.getItem('lortos_equipe') === '1'; } catch (e) {}
   var escolha = lerEscolha(ls, Date.now());
 
@@ -41,8 +41,13 @@
     win.gtag = function () { win.dataLayer.push(arguments); };
     win.gtag('consent', 'default', estado(escolha));   
     win.gtag('js', new Date());
-    win.gtag('config', ga4);
-    anexa('https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ga4));
+    if (/^GTM-/.test(ga4)) {   
+      win.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+      anexa('https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(ga4));
+    } else {
+      win.gtag('config', ga4);
+      anexa('https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ga4));
+    }
   }
   function carregaMeta() {
     if (!win.fbq) {
